@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -14,80 +15,83 @@
 
 <body style="background-image: url('./assets/images/bananas/bananas.png')">
 
-    <div class="wrapper">
+    <div class="container-fluid">
 
 
+        <div class="row">
+            <div class="col-md-4" id="title">
+                <h1>Fruit Collector!</h1>
+            </div>
+            <div class="col-md-8"></div>
+        </div>
 
-        <div class="col-md-4" id="title">
-            <h1>Crystals Collector!</h1>
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-6" id="directions">
+                You will be given a random number at the start of the game.
+                <br>
+                There are four fruits below. By clicking on a fruit, you will add a specific amount of
+                points to
+                your total score.
+                <br>
+                You win the game by matching your total score to the random number (you lose by scoring above
+                the random
+                number).
+                <br>
+                The value of each fruit is hidden from you until you click on it.
+                <br>
+                Each time the game starts, the values of the fruits will change.
+            </div>
+
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-4" id="targetNumber">
+                <span id="numberToGuess">0</span>
+            </div>
+            <div class="col-md-2" id="tally">
+                Wins: <span id="wins">0</span>
+                <br>
+                Losses: <span id="losses">0</span>
+            </div>
+        </div>
+        <div class="row" id="fruitsRow">
+            <div class="col-md-3 fruits" id="apple">
+                <img src="assets/images/apple.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-3 fruits" id="banana">
+                <img src="assets/images/banana.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-3 fruits" id="berry">
+                <img src="assets/images/berry.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-3 fruits" id="melon">
+                <img src="assets/images/melon.jpg" class="img-responsive">
+            </div>
+        </div>
+        <!-- <div class="row" id="fruitImage"></div> -->
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-3" id="total">
+                Your total score is:
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-3" id="score">
+                <span>0</span>
+            </div>
         </div>
     </div>
 
-    <br>
-
-    <div class="row">
-        <div class="col-md-6" id="directions">
-            You will be given a random number at the start of the game.
-            <br>
-            There are four fruits below. By clicking on a fruit, you will add a specific amount of
-            points to
-            your total score.
-            <br>
-            You win the game by matching your total score to the random number (you lose by scoring above
-            the random
-            number).
-            <br>
-            The value of each fruit is hidden from you until you click on it.
-            <br>
-            Each time the game starts, the values of the fruits will change.
-        </div>
-
-    </div>
-
-    <br>
-
-    <div class="row">
-        <div class="col-md-4" id="targetNumber">
-            <span id="numberToGuess">0</span>
-        </div>
-        <div class="col-md-2" id="tally">
-            Wins: <span id="wins">0</span>
-            <br>
-            Losses: <span id="losses">0</span>
-        </div>
-    </div>
-    <div class="row" id="fruits">
-        <div class="col-md-3" id="apple">
-            <img src="assets/images/apple.jpg" class="img-responsive" alt="apple">
-        </div>
-        <div class="col-md-3" id="banana">
-            <img src="assets/images/banana.jpg" class="img-responsive" alt="banana">
-        </div>
-        <div class="col-md-3" id="berry">
-            <img src="assets/images/berry.jpg" class="img-responsive" alt="berry">
-        </div>
-        <div class="col-md-3" id="melon">
-            <img src="assets/images/melon.jpg" class="img-responsive" alt="melon">
-        </div>
-    </div>
-
-    <br>
-
-    <div class="row">
-        <div class="col-md-3" id="total">
-            Your total score is:
-        </div>
-    </div>
-
-    <br>
-
-    <div class="row">
-        <div class="col-md-3" id="score">
-            <span>0</span>
-        </div>
-    </div>
-
-   
 
 
 
