@@ -13,6 +13,9 @@ console.log(targetNumber);
 
 $("#numberToGuess").text(targetNumber);
 
+
+
+
 var fruitOptions = ["apple", "banana", "berry", "melon"]
 
 for (var i = 0; i < 4; i++) {
@@ -39,7 +42,7 @@ $(".fruits").on('click', function () {
         losses++;
         $("#losses").html(losses);
         $("#score").html(score = 0);
-
+        resetTarget();
     }
 
 
@@ -48,12 +51,17 @@ $(".fruits").on('click', function () {
         wins++;
         $("#wins").html(wins);
         $("#score").html(score = 0);
-
+        resetTarget();
     }
 
 
 
 });
+
+function resetTarget () {
+    targetNumber = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
+    $("#numberToGuess").text(targetNumber);
+}
 
 
 
