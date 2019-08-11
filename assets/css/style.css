@@ -1,35 +1,41 @@
 
+/* h1, h2 {
+    font-family: 'Shadows Into Light', cursive;
+} */
 
 #title {
-    color: white;
-    background-color: blueviolet;
-    padding: 4%;
+    text-align: center;
+    /* color: white; */
+    background-color: #F73781;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 #directions {
-    background-color: aquamarine;
+    background-color:#B0D233;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 #targetNumber {
-    background-color: darkcyan;
+    background-color: #FE84A2;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 #tally {
-    background-color: crimson;
+    background-color:#5D9315;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 #fruits {
-    background-color: bisque;
+    margin-right: 5px;
 }
 
-#total {
-    background-color: brown;
+#total, #score{
+    background-color:#FDE575;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
 }
-
-#score {
-    background-color: plum;
-}
-
 
 
 
